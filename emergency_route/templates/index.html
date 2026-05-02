@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Route Optimizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Emergency Route Optimizer</h1>
+            <p>Hybrid Algorithm (Dijkstra + Backtracking + Randomization)</p>
+        </header>
+
+        <div class="main-content">
+            <div class="controls">
+                <div class="input-group">
+                    <label for="start">Start (Hospital)</label>
+                    <select id="start">
+                        <option value="A">Node A (Hospital 1)</option>
+                        <option value="B">Node B (Hospital 2)</option>
+                        <option value="C">Node C</option>
+                        <option value="D">Node D</option>
+                        <option value="E">Node E</option>
+                        <option value="F">Node F</option>
+                        <option value="G">Node G</option>
+                        <option value="H">Node H</option>
+                        <option value="I">Node I</option>
+                        <option value="J">Node J</option>
+                        <option value="K">Node K</option>
+                        <option value="L">Node L</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="end">Destination (Accident)</label>
+                    <select id="end">
+                        <option value="A">Node A</option>
+                        <option value="B">Node B</option>
+                        <option value="C">Node C</option>
+                        <option value="D">Node D</option>
+                        <option value="E">Node E</option>
+                        <option value="F">Node F</option>
+                        <option value="G">Node G</option>
+                        <option value="H">Node H</option>
+                        <option value="I">Node I</option>
+                        <option value="J">Node J</option>
+                        <option value="K">Node K</option>
+                        <option value="L" selected>Node L (Accident Zone)</option>
+                    </select>
+                </div>
+
+                <div class="actions">
+                    <button id="findRouteBtn" class="btn primary">Find Best Route</button>
+                    <button id="simulateBtn" class="btn secondary">Simulate Traffic</button>
+                </div>
+            </div>
+
+            <div class="results-visualization">
+                <div class="results" id="resultsBox">
+                    <h3>Route Details</h3>
+                    <div id="resultContent">
+                        <p class="placeholder">Select locations and calculate route.</p>
+                    </div>
+                </div>
+                <div class="graph-container">
+                    <div id="cy"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
