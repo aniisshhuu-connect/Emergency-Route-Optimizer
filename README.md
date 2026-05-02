@@ -1,4 +1,4 @@
-# 🚑 Emergency Route Optimizer
+# Emergency Route Optimizer
 
 [![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![Cytoscape.js](https://img.shields.io/badge/Cytoscape.js-ED1C24?style=for-the-badge&logo=cytoscape&logoColor=white)](https://js.cytoscape.org/)
@@ -8,20 +8,20 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- 🏥 **City Grid Visualization**: Interactive 12-node graph representing city intersections and hospitals.
-- ⚡ **Hybrid Optimization**: 
+- **City Grid Visualization**: Interactive 12-node graph representing city intersections and hospitals.
+- **Hybrid Optimization**:
   - **Dijkstra**: Foundation for baseline shortest path calculation.
   - **Backtracking**: Exhaustive path search to evaluate alternatives under stress.
   - **Randomization**: Simulates dynamic traffic delays and road closures.
-- 🚦 **Real-time Simulation**: Toggle traffic conditions to see how the optimizer adapts to delays.
-- 📊 **Performance Analytics**: Compares the "Ideal Path" vs. "Traffic-Adjusted Path" with time-saved metrics.
-- 🎨 **Modern UI**: Clean, responsive dashboard built with a premium aesthetic and Cytoscape.js.
+- **Real-time Simulation**: Toggle traffic conditions to see how the optimizer adapts to delays.
+- **Performance Analytics**: Compares the "Ideal Path" vs. "Traffic-Adjusted Path" with time-saved metrics.
+- **Modern UI**: Clean, responsive dashboard built with a premium aesthetic and Cytoscape.js.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: Python, Flask
 - **Frontend**: Javascript (Cytoscape.js), HTML5, CSS3 (Inter Typography)
@@ -32,7 +32,7 @@
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -75,7 +75,7 @@
 
 ---
 
-## 🧠 How it Works
+## How it Works
 
 1. **Graph Initialization**: The city is modeled as an undirected weighted graph where nodes are locations and edges are roads.
 2. **Dijkstra's Phase**: Upon selecting a start and end, the system calculates the theoretical shortest path using the Dijkstra algorithm.
@@ -85,10 +85,10 @@
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-**Built with ❤️ for Emergency Responders.**
+Built with care for Emergency Responders.
